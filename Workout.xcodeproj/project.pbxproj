@@ -19,6 +19,8 @@
 		65ACE33F191FAC7B005451E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ACE327191FAC7B005451E4 /* UIKit.framework */; };
 		65ACE347191FAC7B005451E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65ACE345191FAC7B005451E4 /* InfoPlist.strings */; };
 		65ACE349191FAC7B005451E4 /* WorkoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE348191FAC7B005451E4 /* WorkoutTests.m */; };
+		65ACE355191FACE0005451E4 /* PJWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ACE353191FACE0005451E4 /* PJWorkoutViewController.m */; };
+		65ACE356191FACE0005451E4 /* PJWorkoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65ACE354191FACE0005451E4 /* PJWorkoutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		65ACE344191FAC7B005451E4 /* WorkoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorkoutTests-Info.plist"; sourceTree = "<group>"; };
 		65ACE346191FAC7B005451E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65ACE348191FAC7B005451E4 /* WorkoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkoutTests.m; sourceTree = "<group>"; };
+		65ACE352191FACE0005451E4 /* PJWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJWorkoutViewController.h; sourceTree = "<group>"; };
+		65ACE353191FACE0005451E4 /* PJWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJWorkoutViewController.m; sourceTree = "<group>"; };
+		65ACE354191FACE0005451E4 /* PJWorkoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJWorkoutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 		65ACE317191FAC7B005451E4 = {
 			isa = PBXGroup;
 			children = (
+				65ACE352191FACE0005451E4 /* PJWorkoutViewController.h */,
+				65ACE353191FACE0005451E4 /* PJWorkoutViewController.m */,
+				65ACE354191FACE0005451E4 /* PJWorkoutViewController.xib */,
 				65ACE329191FAC7B005451E4 /* Workout */,
 				65ACE342191FAC7B005451E4 /* WorkoutTests */,
 				65ACE322191FAC7B005451E4 /* Frameworks */,
@@ -221,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ACE32E191FAC7B005451E4 /* InfoPlist.strings in Resources */,
+				65ACE356191FACE0005451E4 /* PJWorkoutViewController.xib in Resources */,
 				65ACE336191FAC7B005451E4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ACE334191FAC7B005451E4 /* PJAppDelegate.m in Sources */,
+				65ACE355191FACE0005451E4 /* PJWorkoutViewController.m in Sources */,
 				65ACE330191FAC7B005451E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
