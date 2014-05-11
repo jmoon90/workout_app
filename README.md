@@ -5,7 +5,8 @@ workout_app
 - Log your workouts
     - sets
     - reps
-    - workout name
+    - exercise name
+    - date 
 - Local database to store workout information
 - Take timeline pics (possibly)
     - Before and after 
