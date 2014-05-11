@@ -1,9 +1,9 @@
 #Workout App
 
 ##Features
-- Log your workouts. Sets, reps, and workout name
+- Log your workouts (sets, reps, and workout name).
 - Local database to store your information
-- Take a picture (possibly)
+- Take timeline pics. Before and after (possibly)
 
 ##Development
 - Xcode 5.1.1
