@@ -13,4 +13,5 @@ workout_app
 
 ##Development
 - Xcode 5.1.1
-- iOS App 
+- iOS 7 App 
+- iPhone only

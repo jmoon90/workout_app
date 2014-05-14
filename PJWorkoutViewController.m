@@ -9,30 +9,34 @@
 #import "PJWorkoutViewController.h"
 
 @interface PJWorkoutViewController ()
+    @property(nonatomic, weak) IBOutlet UILabel *todayWorkoutLabel;
+    @property(nonatomic, weak) IBOutlet UILabel *workoutLabel;
+    @property(nonatomic) int currentWorkoutIndex;
 
+    @property (nonatomic, copy) NSArray *workouts;
 @end
 
 @implementation PJWorkoutViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
     if (self) {
-        // Custom initialization
+        self.workouts = @[@"Dumbbell flies", @"Bench press", @"Decline bench"];
     }
     return self;
 }
-
-- (void)viewDidLoad
+    //When users click add workout they should be direct to this method that allows them to add a new workout from our list of existing workouts
+- (IBAction)addWorkout:(id)sender
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
+    self.currentWorkoutIndex++;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (self.currentWorkoutIndex == [self.workouts count]) {
+        self.currentWorkoutIndex = 0;
+    }
+    
+    //self.workouts = "Add Workout";
+    NSString *workout = self.workouts[self.currentWorkoutIndex];
+    self.workoutLabel.text = workout;
+    
 }
-
 @end

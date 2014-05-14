@@ -7,6 +7,7 @@
 //
 
 #import "PJAppDelegate.h"
+#import "PJWorkoutViewController.h"
 
 @implementation PJAppDelegate
 
@@ -14,6 +15,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    PJWorkoutViewController *workout = [[PJWorkoutViewController alloc] init];
+
+    self.window.rootViewController = workout;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
